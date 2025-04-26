@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3f3;
+    color: #555;
+}
+
+nav {
+    background-color: #ff6f61;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff9f8b;
+}
+
+nav a.active {
+    background-color: #ff3b30;
+    transform: scale(1.05);
+}
+
+.hero {
+    background-color: #ff3b30;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.content-section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #ff6f61;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ff6f61;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    margin: 30px 0;
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-media a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+    color: #ff3b30;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 15px 0;
+    border: 2px solid #ff9f8b;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    color: #555;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff3b30;
+}
+
+/* Projects Page */
+.gallery-grid {
+    display: flex;
+    gap: 20px; /* Slight increase in gap for spacing */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-grid img {
+    width: 150px;  /* Reduced image size to 150px for a more compact, cute look */
+    height: 150px; /* Ensure images are square-shaped */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover for cuteness */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Hobbies Page */
+.hobby-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    width: 180px;
+    text-align: center;
+    padding: 15px;
+    background-color: #ff9f8b;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05);
+}
+
+.hobby-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.hobby-card p {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+}
